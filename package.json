@@ -1,6 +1,6 @@
 {
   "name": "global_persistence",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A link between LRU and messaging to peers which may store or cache LRU entries remotely",
   "main": "index.js",
   "directories": {
