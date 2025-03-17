@@ -1,9 +1,10 @@
 # global_persistence
 
- Classes related to distributed hash tables and file checkpoints
+Classes related to distributed hash tables and file checkpoints
 
+***Client side operations:*** *Clients of global categories, odb sevices, persistence endpoins, etc.*
 
-
+Clients are web/application servers. Some clients might be actual web pages.
 
 
 ## Persistence
