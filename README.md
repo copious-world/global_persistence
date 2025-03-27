@@ -82,3 +82,57 @@ The following code shows how the paths are processed.
 
 ```
 	
+
+## Record Formats
+
+### Persistence
+
+```
+/*
+
+upload_record = {
+    "_tracking" : tracking,             // tracking of the asset
+    "_id" :  this._user_id,             // should be a UCWID  ... from the client ... will be single user context
+    "_author_tracking" :  this._author_tracking,
+    "_paid" : paid,
+    "_transition_path" : "asset_path",
+    "asset_path" : `${tracking}+${asset_type}+${this._user_id}`,
+    "title" : encodeURIComponent(title),
+    "subject" : encodeURIComponent(subject),
+    "keys" : keys,
+    "asset_type" : asset_type,        // blog, stream, link-package, contact, ownership, etc...
+    "media_type" : media_type,        // text, audio, video, image
+    "abstract" : encodeURIComponent(abstract),
+    "media" : {
+        "poster" : poster,
+        "source" : media_data
+    },
+    "encode" : true,
+    "txt_full" : encodeURIComponent(full_text),
+    "dates" : {
+        "created" : Date.now(),
+        "updated" : modDate
+    },
+    "_history" : this._current_asset_history ? this._current_asset_history : [],
+    "_prev_text" : this._current_asset_prev_text,
+    "text_ucwid_info" : this._current_asset_text_ucwid_info,
+    "repository_fields" : repository_fields,
+    "exclusion_fields" : exclusion_fields,
+
+    //
+    "topic" : "command-upload",
+    "path" : "upload-media",
+    "file_name" : data_hash,
+
+
+    postable.ucwid = user_info.ccwid
+    postable.session = session
+    postable.hash = data.hash
+    postable.public_signer = g_current_pub_identity.signer_public_key
+    postable.axiom_public_key = g_current_pub_identity.axiom_public_key
+
+}
+```
+
+### User
+
