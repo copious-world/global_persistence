@@ -1,6 +1,6 @@
 {
   "name": "global_persistence",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "description": "A link between LRU and messaging to peers which may store or cache LRU entries remotely",
   "main": "index.js",
   "directories": {
@@ -30,6 +30,6 @@
   "dependencies": {
     "categorical-handlers": "^0.7.5",
     "repository-bridge": "^0.9.9",
-    "ucwid": "^0.4.0"
+    "ucwid": "^0.4.1"
   }
 }
