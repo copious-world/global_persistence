@@ -1,6 +1,6 @@
 {
   "name": "global_persistence",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "A link between LRU and messaging to peers which may store or cache LRU entries remotely",
   "main": "index.js",
   "directories": {
@@ -29,7 +29,7 @@
   "homepage": "https://github.com/copious-world/global_persistence#readme",
   "dependencies": {
     "categorical-handlers": "^0.7.9",
-    "repository-bridge": "^0.9.24",
+    "repository-bridge": "^0.9.25",
     "ucwid": "^0.4.1"
   }
 }
